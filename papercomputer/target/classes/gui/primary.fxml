@@ -4,12 +4,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PrimaryController">
-   <children>
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
-   </children>
+      <TextArea fx:id="timeInputId" minHeight="300" minWidth="100" wrapText="true" maxHeight="200"
+              promptText="Please write the command at the beginning of a line and only one per line!" focusTraversable="false"
+              GridPane.columnIndex="10"
+              GridPane.rowIndex="2"
+              GridPane.columnSpan="1"
+              GridPane.halignment="CENTER"
+    />
+      <Label text="Primary View lul" />
+      <Button fx:id="executeButton" text="execute commands" onAction="#switchToExecuteView"/>
+
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
