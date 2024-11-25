@@ -1,9 +1,12 @@
 package logic;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public final class memory {
     static ArrayList<String> command = new ArrayList<>();
+    static ArrayList<Integer> startRegister = new ArrayList<>();
+    static ArrayList<Integer> workRegister = new ArrayList<>();
 
     public static void setCommand(String input){
         //command = input.split(System.lineSeparator());
