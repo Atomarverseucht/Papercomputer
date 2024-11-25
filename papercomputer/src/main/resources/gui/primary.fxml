@@ -11,7 +11,7 @@
 <?import javafx.scene.text.*?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PrimaryController">
-      <TextArea fx:id="textInputId" minHeight="300" minWidth="100" wrapText="true" maxHeight="200"
+      <TextArea fx:id="textarea" minHeight="300" minWidth="100" wrapText="true" maxHeight="200"
               promptText="Please write the command at the beginning of a line and only one per line!" focusTraversable="false"
               GridPane.columnIndex="10"
               GridPane.rowIndex="2"
