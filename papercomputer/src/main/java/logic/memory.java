@@ -27,7 +27,7 @@ public final class memory {
         String output = "";
         int i = 0;
         for (Integer value : startRegister) {
-            output += Integer.toString(i) + ": " + value + "\n";
+            output += value + "\n";
             i++;
         }
         if(i < 9){
