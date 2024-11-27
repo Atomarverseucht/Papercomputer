@@ -22,4 +22,24 @@ public final class memory {
         }
         return output;
     }
+
+    public static String getStartRegisterString(){
+        String output = "";
+        int i = 0;
+        for (Integer value : startRegister) {
+            output += Integer.toString(i) + ": " + value + "\n";
+            i++;
+        }
+        if(i < 9){
+            while (i != 9) {
+                output += "\n";
+                i++;
+            }
+        }
+        return output;
+    }
+
+    public static  void setRegister(String input){
+
+    }
 }
