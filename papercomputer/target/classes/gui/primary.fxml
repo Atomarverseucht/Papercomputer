@@ -2,8 +2,9 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
-
-<BorderPane xmlns="http://javafx.com/javafx"
+<?import javafx.scene.control.*?>
+<?import gui.NumberedTextArea?> <!-- WICHTIG: Import der benutzerdefinierten Komponente -->
+<BorderPane xmlns="http://javafx.com/javafx" 
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="gui.PrimaryController"
             prefWidth="600" prefHeight="400">
@@ -13,20 +14,19 @@
         <Label text="Label" styleClass="header-label" />
     </top>
 
-    <!-- Mittlerer Bereich: Container für TextAreas -->
+    <!-- Mittlerer Bereich: Zwei skalierbare TextAreas -->
     <center>
-        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
-            <TextArea fx:id="textarea" HBox.hgrow="ALWAYS" wrapText="true" />
-            <TextArea fx:id="textRegister" HBox.hgrow="ALWAYS" wrapText="true" />
+        <HBox spacing="10" style="-fx-padding: 10;">
+            <NumberedTextArea fx:id="textarea" HBox.hgrow="ALWAYS" />
+            <NumberedTextArea fx:id="textRegister" HBox.hgrow="ALWAYS" />
         </HBox>
     </center>
 
     <!-- Unterer Bereich: Button -->
     <bottom>
-        <HBox alignment="CENTER" style="-fx-padding: 10;">
-            <Button text="Switch View" 
-                    onAction="#switchToExecuteView" 
-                    styleClass="main-button" />
-        </HBox>
+        <Button text="Switch View" 
+                onAction="#switchToExecuteView" 
+                styleClass="main-button" 
+                maxWidth="Infinity" />
     </bottom>
 </BorderPane>
